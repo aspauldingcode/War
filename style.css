@@ -1,0 +1,54 @@
+/* ok! Now the text. */
+#warTitleText {
+  margin: auto;
+  line-height: 120px;
+  min-height: 152px;
+  max-width: 680px;
+  text-align: center;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 60px;
+  letter-spacing: 15px;
+  text-decoration: overline underline solid #b3682c;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  color: #bc2e1e;
+  background: #fff url("images/banner.png") no-repeat scroll 50% 0%;
+  text-shadow: 1px -1px 0 #767676, -1px 2px 1px #737272, -2px 4px 1px #767474, -3px 6px 1px #949392, -4px 8px 1px #a3a1a1, -5px 10px 1px #bcbbba, -6px 12px 1px #cfcdcd, -7px 14px 1px #d8d6d5;
+}
+
+/* seperate Players, and Display Score Center. */
+/* #paragraphColumns{
+  background-color:#92a8d1;
+  min-height: 80px;
+  margin-top: 10px;
+  text-align: center;
+  column-count: 5;
+  column-gap: 10px;
+  column-rule: 3px solid #000;
+} */
+
+/* fix card stylings */
+
+#left, .left {
+  text-align: left;
+}
+
+#center, .center {
+  text-align: center;
+}
+
+#right, .right {
+  text-align: right;
+}
+
+.tab {
+  text-indent:40px
+}
+
+.divcenter {
+  margin: auto;
+  width: 50%;
+  border: 10px solid #4e7fda;
+  padding: 10px;
+}

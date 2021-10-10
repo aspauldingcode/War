@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header id="warTitleText">~ War ~</header>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>War Card Game</title>
+  <link rel="manifest" href="package.json">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  
+  <!-- link bootstrap and stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<style>
+  body {
+    background-color:#edde9c;
+  }
+  </style>
+<body>
+
+<h1 class="center">War card game</h1>
+<br>
+<hr class="bold">
+
+<!-- Button to describe the rules of game -->
+<div class="center">
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
+    How to play War!?
+  </button>
+</div>
+<br>
+</div>
+<div class="collapse" id="instructions">
+  <div class="card text-center">
+    <div class="card-header">
+      Game instructions:
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">WAR</h5>
+      <div id="left" class="divcenter">
+        <p class="card-text">
+        <p>1).	Deal 26 Cards to two Players from a Deck.</p>
+        <p>2).	Iterate through the turns where each Player plays a Card</p>
+        <p>3).	The Player who played the higher card is awarded a point</p>
+        <p class="tab">a). Ties result in zero points for either Player</p>
+        <p>4).	After all cards have been played, display the score.</p>
+      </p>
+      </div>
+      
+      <div class="center">
+        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#instructions" aria-expanded="false" aria-controls="instructions">
+          I know how to play!
+        </button>
+
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      SHEESH!
+    </div>
+  </div>
+</div>
+
+<!-- 
+
+
+  <div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">
+              -	Deal 26 Cards to two Players from a Deck. 
+              -	Iterate through the turns where each Player plays a Card
+              -	The Player who played the higher card is awarded a point
+                   ---- Ties result in zero points for either Player
+              -	After all cards have been played, display the score.</h5>
+            <p class="card-text"></p>
+            <p class="cardPlayer">insert player's card here</p>
+            <a href="#" class="btn btn-primary">Present new card!</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  
+  <!-- <div class="card card-body"> -->
+    <!-- -	Deal 26 Cards to two Players from a Deck.  -->
+    <!-- -	Iterate through the turns where each Player plays a Card -->
+    <!-- -	The Player who played the higher card is awarded a point -->
+         <!-- ---- Ties result in zero points for either Player -->
+    <!-- -	After all cards have been played, display the score. -->
+  <!-- </div>
+</div>
+
+<p class = "center">
+  </p> -->
+
+<!-- 
+Game Information
+  <div id="paragraphColumns">Player's Deck</p>
+    <p>Dang I'm Actually Pro, Bro!</p>
+    <p>Who's winning?</p>    
+    <p>dude, ur a bot</p>
+    <p>Computer's Deck</p>
+  </div>
+
+
+
+  Game info take 2
+<div class="row">
+  <div class="col-sm-6">
+    <div class="left">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Player (YOU)</h5>
+          <p class="card-text">Your card is:</p>
+          <p class="cardPlayer">insert player's card here</p>
+          <a href="#" class="btn btn-primary">Present new card!</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="right">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Enemy</h5>
+          <p class="card-text">Opponent's card is:</p>
+          <p class="cardOpponent">insert Opponent's card here</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+<div class="card-group">
+  <div class="card">
+    <div id="right" class="card-body">
+      <h5 class="card-title">Player (YOU)</h5>
+      <p class="card-text">Your card is:</p>
+      <p id='card' class="card-text"><small class="text-muted">Your card here</small></p>
+    </div>
+    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2014%2F09%2Fnapoleon-dynamite_612x380_1.jpg&q=85" class="card-img-top" alt="Dynamite">
+  </div>
+  <div class="card">
+    <div id="center" class="card-body">
+      <h5 class="card-title">Who won the play?</h5>
+      <p class="card-text">Insert "Your card is higher!"</p>
+      <p class="card-text"><small class="text-muted">Insert a count for cards left?</small></p>
+      <button class="btn btn-success" type="button" onclick='getRandomCards()'>
+        Present cards!
+      </button>
+    </div>
+  </div>
+  <div class="card">
+    <div id="left" class="card-body">
+      <h5 class="card-title">Enemy (bot)</h5>
+      <p class="card-text">Opponent's card is:</p>
+      <p id='enemyCard' class="card-text"><small class="text-muted">Opponent's card here</small></p>
+    </div>
+    <img src="https://www.cnet.com/a/img/Q--Mx11dGxNCAlsMED94jHejsXw=/940x0/2021/07/12/cb81c019-6dde-4660-9f56-bff9a47d5fae/microsoft-teams-clippy.png" class="card-img-top" alt="Clippyboi">
+  </div>
+</div>
+
+
+<!-- <p id='card'>
+</p>
+
+<p id='enemyCard'>
+
+</p> -->
+  <!-- Game Controls -->
+<!-- <hr class="slim"> -->
+<!-- <h2 class = "center"> random button thingy</h2> -->
+<!-- 
+<div class = "center">
+  <button type="button" class="btn btn-outline-primary">Play</button>
+</div> -->
+
+
+<style>
+  div.center, h1.center, h2.center, h3.center, p.center {
+    text-align: center;
+  }
+
+  hr.bold {
+    border: none;
+    height: 5px;
+    /* Set the hr color */
+    background-color: #bc2e1e; /* Modern Browsers */
+  }
+  hr.slim {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    background-color: #bc2e1e; /* Modern Browsers */
+  }
+</style>
+
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="war.js"></script>
+<script src="cards.js"></script>
+
+</body>
+</html>
